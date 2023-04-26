@@ -1,0 +1,112 @@
+
+<http://foo.example/DB/tweet/idtweet=30> <http://foo.example/DB/tweet#hastext> "This is a tweet" .
+
+<http://foo.example/DB/tweet/idtweet=32> a <http://foo.example/DB/tweet> .
+
+<http://foo.example/DB/tweet/idtweet=30> a <http://foo.example/DB/tweet> .
+
+<http://foo.example/DB/tweet/idtweet=31> <http://foo.example/DB/tweet#hastext> "HelloWorld" .
+
+<http://foo.example/DB/person/idperson=3> a <http://foo.example/DB/person> .
+
+<http://foo.example/DB/person/idperson=2> <http://foo.example/DB/person#idperson> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://foo.example/DB/tweet/idtweet=32> <http://foo.example/DB/tweet#hastext> "What " .
+
+<http://foo.example/DB/hasemotion/Tid=31,Emid=0> <http://foo.example/DB/hasemotion#Tid> <http://foo.example/DB/tweet/idtweet=31> .
+
+<http://foo.example/DB/person/idperson=1> a <http://foo.example/DB/person> .
+
+<http://foo.example/DB/references/Twid=32,Peid=1> <http://foo.example/DB/references#Peid> <http://foo.example/DB/person/idperson=1> ;
+	<http://foo.example/DB/references#Twid> <http://foo.example/DB/tweet/idtweet=32> .
+
+<http://foo.example/DB/person/idperson=1> <http://foo.example/DB/person#name> "Alice" .
+
+<http://foo.example/DB/emotion/idemotion=0> a <http://foo.example/DB/emotion> .
+
+<http://foo.example/DB/references/Twid=30,Peid=2> a <http://foo.example/DB/references> .
+
+<http://foo.example/DB/tweet/idtweet=30> <http://foo.example/DB/tweet#time> "Jan" .
+
+<http://foo.example/DB/emotion/idemotion=4> a <http://foo.example/DB/emotion> .
+
+<http://foo.example/DB/references/Twid=30,Peid=2> <http://foo.example/DB/references#Peid> <http://foo.example/DB/person/idperson=2> .
+
+<http://foo.example/DB/tweet/idtweet=30> <http://foo.example/DB/tweet#idtweet> "30"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://foo.example/DB/tweet/idtweet=32> <http://foo.example/DB/tweet#time> "March" .
+
+<http://foo.example/DB/type_person/idtype_person=100> <http://foo.example/DB/type_person#idtype_person> "100"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://foo.example/DB/hasemotion/Tid=30,Emid=0> <http://foo.example/DB/hasemotion#Emid> <http://foo.example/DB/emotion/idemotion=0> .
+
+<http://foo.example/DB/person/idperson=2> <http://foo.example/DB/person#type_P> <http://foo.example/DB/type_person/idtype_person=100> .
+
+<http://foo.example/DB/tweet/idtweet=31> <http://foo.example/DB/tweet#type_T> <http://foo.example/DB/type_tweet/idtype_tweet=200> .
+
+<http://foo.example/DB/tweet/idtweet=32> <http://foo.example/DB/tweet#p_id> <http://foo.example/DB/person/idperson=2> .
+
+<http://foo.example/DB/hasemotion/Tid=31,Emid=0> <http://foo.example/DB/hasemotion#Emid> <http://foo.example/DB/emotion/idemotion=0> .
+
+<http://foo.example/DB/tweet/idtweet=30> <http://foo.example/DB/tweet#p_id> <http://foo.example/DB/person/idperson=1> .
+
+<http://foo.example/DB/person/idperson=3> <http://foo.example/DB/person#idperson> "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://foo.example/DB/tweet/idtweet=31> <http://foo.example/DB/tweet#idtweet> "31"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://foo.example/DB/hasemotion/Tid=30,Emid=0> <http://foo.example/DB/hasemotion#Tid> <http://foo.example/DB/tweet/idtweet=30> .
+
+<http://foo.example/DB/tweet/idtweet=31> a <http://foo.example/DB/tweet> .
+
+<http://foo.example/DB/emotion/idemotion=0> <http://foo.example/DB/emotion#idemotion> "0"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://foo.example/DB/emotion/idemotion=4> <http://foo.example/DB/emotion#idemotion> "4"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://foo.example/DB/hasemotion/Tid=32,Emid=4> <http://foo.example/DB/hasemotion#Emid> <http://foo.example/DB/emotion/idemotion=4> .
+
+<http://foo.example/DB/person/idperson=3> <http://foo.example/DB/person#name> "Clara" .
+
+<http://foo.example/DB/references/Twid=31,Peid=3> <http://foo.example/DB/references#Twid> <http://foo.example/DB/tweet/idtweet=31> .
+
+<http://foo.example/DB/person/idperson=2> a <http://foo.example/DB/person> ;
+	<http://foo.example/DB/person#name> "Bob" .
+
+<http://foo.example/DB/hasemotion/Tid=30,Emid=0> a <http://foo.example/DB/hasemotion> .
+
+<http://foo.example/DB/type_tweet/idtype_tweet=200> <http://foo.example/DB/type_tweet#idtype_tweet> "200"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://foo.example/DB/references/Twid=32,Peid=1> a <http://foo.example/DB/references> .
+
+<http://foo.example/DB/tweet/idtweet=32> <http://foo.example/DB/tweet#idtweet> "32"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://foo.example/DB/tweet#type_T> <http://foo.example/DB/type_tweet/idtype_tweet=200> .
+
+<http://foo.example/DB/emotion/idemotion=0> <http://foo.example/DB/emotion#sentiment> "negative" .
+
+<http://foo.example/DB/type_person/idtype_person=100> a <http://foo.example/DB/type_person> .
+
+<http://foo.example/DB/hasemotion/Tid=31,Emid=0> a <http://foo.example/DB/hasemotion> .
+
+<http://foo.example/DB/emotion/idemotion=4> <http://foo.example/DB/emotion#sentiment> "positive" .
+
+<http://foo.example/DB/person/idperson=1> <http://foo.example/DB/person#type_P> <http://foo.example/DB/type_person/idtype_person=100> .
+
+<http://foo.example/DB/type_tweet/idtype_tweet=200> a <http://foo.example/DB/type_tweet> .
+
+<http://foo.example/DB/person/idperson=3> <http://foo.example/DB/person#type_P> <http://foo.example/DB/type_person/idtype_person=100> .
+
+<http://foo.example/DB/person/idperson=1> <http://foo.example/DB/person#idperson> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://foo.example/DB/references/Twid=31,Peid=3> a <http://foo.example/DB/references> .
+
+<http://foo.example/DB/hasemotion/Tid=32,Emid=4> a <http://foo.example/DB/hasemotion> .
+
+<http://foo.example/DB/tweet/idtweet=30> <http://foo.example/DB/tweet#type_T> <http://foo.example/DB/type_tweet/idtype_tweet=200> .
+
+<http://foo.example/DB/references/Twid=31,Peid=3> <http://foo.example/DB/references#Peid> <http://foo.example/DB/person/idperson=3> .
+
+<http://foo.example/DB/references/Twid=30,Peid=2> <http://foo.example/DB/references#Twid> <http://foo.example/DB/tweet/idtweet=30> .
+
+<http://foo.example/DB/tweet/idtweet=31> <http://foo.example/DB/tweet#time> "Feb" ;
+	<http://foo.example/DB/tweet#p_id> <http://foo.example/DB/person/idperson=1> .
+
+<http://foo.example/DB/hasemotion/Tid=32,Emid=4> <http://foo.example/DB/hasemotion#Tid> <http://foo.example/DB/tweet/idtweet=32> .
