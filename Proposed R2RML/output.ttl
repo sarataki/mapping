@@ -1,0 +1,79 @@
+<http://example.com/resource/emotion_0>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Emotion> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#sentiment>
+                "negative" .
+
+<http://example.com/resource/tweet_32>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#HasEMotion> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#References> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Tweet> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#hasEmotion>
+                <http://example.com/resource/emotion_4> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#hastext>
+                "What " ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#references>
+                <http://example.com/resource/person_1> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#time>
+                "March" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type_T>
+                <http://example.com/resource/TweetType_200> .
+
+<http://example.com/resource/person_2>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Person> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#name>
+                "Bob" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#tweeted>
+                <http://example.com/resource/tweet_32> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type_P>
+                <http://example.com/resource/PersonType_100> .
+
+<http://example.com/resource/tweet_30>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#HasEMotion> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#References> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Tweet> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#hasEmotion>
+                <http://example.com/resource/emotion_0> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#hastext>
+                "This is a tweet" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#references>
+                <http://example.com/resource/person_2> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#time>
+                "Jan" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type_T>
+                <http://example.com/resource/TweetType_200> .
+
+<http://example.com/resource/TweetType_200>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#TweetT> .
+
+<http://example.com/resource/person_3>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Person> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#name>
+                "Clara" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type_P>
+                <http://example.com/resource/PersonType_100> .
+
+<http://example.com/resource/emotion_4>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Emotion> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#sentiment>
+                "positive" .
+
+<http://example.com/resource/PersonType_100>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#PersonT> .
+
+<http://example.com/resource/tweet_31>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#HasEMotion> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#References> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Tweet> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#hasEmotion>
+                <http://example.com/resource/emotion_0> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#hastext>
+                "HelloWorld" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#references>
+                <http://example.com/resource/person_3> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#time>
+                "Feb" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type_T>
+                <http://example.com/resource/TweetType_200> .
+
+<http://example.com/resource/person_1>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Person> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#name>
+                "Alice" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#tweeted>
+                <http://example.com/resource/tweet_31> , <http://example.com/resource/tweet_30> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type_P>
+                <http://example.com/resource/PersonType_100> .
